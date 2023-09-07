@@ -16,7 +16,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="w-screen h-14 bg-slate-500 flex px-44 items-center  ">
+          <div className=' w-1/2'>LOGO</div>
+          <div className=' w-1/2 flex justify-between ps-10'>
+            <div>Home</div>
+            <div>About Me</div>
+            <div>Projects</div>
+            <div>Skills</div>
+            <div>Experience</div>
+            <div>Contacts</div>
+          </div>
+        </div>
+        {children}
+        <div className="w-screen bg-slate-500 h-32">Footer</div>
+      </body>
     </html>
   )
 }
